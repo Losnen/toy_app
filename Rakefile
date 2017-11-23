@@ -3,4 +3,9 @@
 
 require_relative 'config/application'
 
+desc "db:migrate"
+task :dbmigrate do
+  exec 'rails db:migrate'
+end
+
 Rails.application.load_tasks
